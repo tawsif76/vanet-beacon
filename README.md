@@ -1,6 +1,6 @@
 # VNDN Beaconing Simulation with Packet Drop Tracer
 
-Here I simulate vehicle beaconing within a Vehicular Named Data Networking (VNDN) environment. The mobility data was generated using SUMO and converted into `.tcl` format for integration with the simulator.
+Here I simulated vehicle beaconing within a Vehicular Named Data Networking (VNDN) environment. The mobility data was generated using SUMO and converted into `.tcl` format for integration with the simulator.
 
 ## Overview
 
@@ -14,7 +14,7 @@ During initial testing, I observed a massive packet drop rate when setting the a
 The issue arises because the application was active **before the vehicle actually entered the SUMO simulation**. Since many vehicles share the same entry points, their initial coordinates were positioned very close to each other. This caused the waiting vehicles to form dense clusters that broadcasted continuously.
 
 ![Hop Count Graph](cluster.png)
-This created a "jammer" effect at the entry coordinates, causing massive interference and collisions for any active vehicles passing nearby.
+As a result, it created a "jammer" effect at the entry coordinates, causing massive interference and collisions for any active vehicles passing nearby.
 
 ## The Solution: NS2 Node Utility
 
