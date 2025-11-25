@@ -1,0 +1,7 @@
+<additional>
+    <vType id="car" length="200.0" maxSpeed="40.0" accel="2.6" decel="4.5" tau="1.2"
+           vClass="passenger" color="255,255,255"/>
+           
+    <!-- <vType id="truck" length="15.0" maxSpeed="50.0" accel="1.0" decel="3.0" tau="1.5"
+           vClass="truck" /> -->
+</additional>
