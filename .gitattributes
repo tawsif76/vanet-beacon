@@ -1,0 +1,13 @@
+# Force C++ files to be classified correctly
+*.cc   linguist-language=Cpp
+*.cpp  linguist-language=Cpp
+*.hpp  linguist-language=Cpp
+*.h    linguist-language=Cpp
+
+# Ignore TCL (simulation scripts) so it doesn't dominate the stats
+*.tcl  linguist-generated=true
+
+# Ignore logs and data dumps
+*.log  linguist-generated=true
+*.dat  linguist-generated=true
+*.txt  linguist-generated=true
